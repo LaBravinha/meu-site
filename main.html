@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Página Principal</title>
+    
+</head>
+<body>
+    <div class="app-header">
+        <h1>Bem-vindo ao SeuApp!</h1>
+        <p id="user-info"></p>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Pesquise aqui..." id="searchInput">
+    </div>
+
+    <div class="months-list">
+        <div class="month">Janeiro</div>
+        <div class="month">Fevereiro</div>
+        <div class="month">Março</div>
+        <div class="month">Abril</div>
+        <div class="month">Maio</div>
+        <div class="month">Junho</div>
+        <div class="month">Julho</div>
+        <div class="month">Agosto</div>
+        <div class="month">Setembro</div>
+        <div class="month">Outubro</div>
+        <div class="month" onclick="goToNovember()">Novembro</div>
+
+        <script>
+            function goToNovember() {
+                window.location.href = 'novembro.html';
+            }
+        </script>
+        
+        <div class="month">Dezembro</div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const cpf = urlParams.get('cpf');
+        const dob = urlParams.get('dob');
+
+        document.getElementById('user-info').innerText = `CPF: ${cpf} | Data de Nascimento: ${dob}`;
+    </script>
+   
+</body>
+</html>

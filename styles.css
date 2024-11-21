@@ -1,0 +1,180 @@
+/* Estilo Global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E8EAF6; /* Azul claro */
+    color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Preenche a tela */
+}
+
+/* Contêiner Principal */
+.app-container {
+    width: 90%;
+    max-width: 400px;
+    background: #FFF; /* Branco */
+    border-radius: 25px; /* Cantos arredondados */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    padding: 20px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Cabeçalhos */
+h1 {
+    font-size: 24px;
+    color: #7E57C2; /* Lilás */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #6D4C41; /* Bege */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Grupos de Entrada */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #6D4C41; /* Bege */
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #D1C4E9; /* Lilás claro */
+    border-radius: 15px; /* Arredondado */
+    box-sizing: border-box;
+    background-color: #F3F3F3; /* Fundo sutil */
+}
+
+.input-group input:focus {
+    border-color: #7E57C2; /* Lilás */
+    outline: none;
+    background-color: #FFF; /* Destaque no foco */
+}
+
+/* Botões */
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background: #7E57C2; /* Lilás */
+    border: none;
+    border-radius: 20px; /* Botão arredondado */
+    cursor: pointer;
+    transition: background 0.3s;
+    box-shadow: 0 4px 10px rgba(126, 87, 194, 0.4); /* Sombra no botão */
+}
+
+.btn:hover {
+    background: #5E35B1; /* Lilás escuro */
+}
+
+/* Barra de Pesquisa */
+.search-bar {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 90%;
+    max-width: 300px;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #D1C4E9; /* Lilás claro */
+    border-radius: 20px; /* Arredondado */
+    box-sizing: border-box;
+    background-color: #F3F3F3; /* Fundo sutil */
+}
+
+/* Lista de Meses */
+.months-list {
+    margin: 20px auto;
+    padding: 0;
+    width: 100%;
+}
+
+.month {
+    background: #FFF; /* Branco */
+    padding: 15px;
+    margin: 8px 0;
+    border-radius: 20px; /* Arredondado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    font-size: 16px;
+    color: #6D4C41; /* Bege */
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.month:hover {
+    transform: translateY(-3px); /* Leve elevação */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Realce */
+}
+
+/* Categorias */
+.category {
+    background: #FFF; /* Branco */
+    border-radius: 20px; /* Arredondado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category ul li {
+    font-size: 16px;
+    color: #444;
+    padding: 8px 0;
+    border-bottom: 1px solid #E0E0E0; /* Divisória */
+}
+
+.category ul li:last-child {
+    border-bottom: none;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #BDBDBD; /* Bege claro */
+}
+
+/* Cabeçalho */
+.app-header {
+    background: #7E57C2; /* Lilás */
+    padding: 20px;
+    text-align: center;
+    color: #FFF; /* Branco */
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 4px 10px rgba(126, 87, 194, 0.4); /* Realce */
+}
+
+.app-header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #D1C4E9; /* Texto secundário */
+}
